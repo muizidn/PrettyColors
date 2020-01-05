@@ -1,0 +1,17 @@
+name: PrettyColors
+schemes:
+  PrettyColors:
+    build:
+      targets:
+        PrettyColors: build
+targets:
+  PrettyColors:
+    type: framework
+    platform: macOS
+    settings:
+      INFOPLIST_FILE: Supporting Files/Info.plist
+      MACOSX_DEPLOYMENT_TARGET: 10.9
+    sources:
+      - path: Source
+        includes:
+          - "**/*.{swift, xcconfig, plist}"
